@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap");
+
+@import "modal.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  background: #343434;
+}
+
+.nav-container {
+  height: 100px;
+  background-color: #009b00;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.nav-main h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #d6d6d6;
+}
+
+.link-contact {
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #d6d6d6;
+}
+
+.link-contact:hover {
+  text-decoration: underline;
+  color: #153700;
+}
+
+.form-container {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.card-form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  background: #252525;
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.error-message {
+  font-size: 0.7rem;
+  font-weight: lighter;
+  margin-top: 3px;
+  color: #cf0000;
+}
+
+.form-input {
+  border: none;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.form-input::placeholder {
+  color: #c9c9c9;
+}
+
+.form-input:disabled {
+  background-color: #ddd;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  color: #d6d6d6;
+  background-color: #009b00;
+}
+
+.btn-left {
+  margin-right: 5px;
+}
+
+.btn-right {
+  margin-left: 6px;
+}
+
+.btn:hover {
+  text-decoration: underline;
+  background-color: #205003;
+}
+
+.list-container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-item {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  background: #252525;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.list-item h3 {
+  text-transform: uppercase;
+  color: #009b00;
+}
+
+.list-item-p-street {
+  margin: 5px 0;
+  color: #d6d6d6;
+}
+
+.list-item-p-cep {
+  color: #807d7d;
+}
+
+.list-item:hover {
+  border-color: #009b00;
+}
+
+@media (min-width: 768px) {
+  .nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
